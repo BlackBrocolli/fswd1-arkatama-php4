@@ -46,7 +46,7 @@
                             <th><?= $number++ ?></th>
                             <td>
                                 <button type='button' class='btn btn-primary'>Detail</button>
-                                <button type='button' class='btn btn-warning'>Edit</button>
+                                <a href="pages/editUser.php?id=<?= $row["id"]; ?>" class="btn btn-warning">Edit</a>
                                 <button type='button' class='btn btn-danger' id='hapusButton' data-bs-toggle='modal' data-bs-target='#hapusModal<?= $row["id"] ?>'>Hapus</button>
                             </td>
                             <td>
