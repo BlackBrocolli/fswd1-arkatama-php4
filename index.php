@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Pertemuan 19</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
@@ -14,6 +15,8 @@
     <!-- MENAMPILKAN TABEL DATA PENGGUNA -->
     <div class="container mt-4">
         <h3>Data pengguna</h3>
+
+        <a href="pages/tambahUser.php" class="btn btn-success"><i class="fa fa-regular fa-plus me-2"></i>Tambah user</a>
 
         <table class="table table-striped">
             <thead>
