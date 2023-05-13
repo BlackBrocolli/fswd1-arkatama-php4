@@ -12,11 +12,32 @@
 
 <body>
 
+    <?php
+    // cek session, apakah sudah login
+    session_start();
+
+    // Cek apakah session sudah ada
+    if (!isset($_SESSION['email'])) {
+        // jika Session belum ada
+        header("Location: pages/login.php");
+        exit;
+    }
+
+    ?>
+
     <!-- MENAMPILKAN TABEL DATA PENGGUNA -->
     <div class="container mt-4">
         <h3>Data pengguna</h3>
 
-        <a href="pages/tambahUser.php" class="btn btn-success"><i class="fa fa-regular fa-plus me-2"></i>Tambah user</a>
+        <div class="d-flex justify-content-between mb-3">
+            <a href="pages/tambahUser.php" class="btn btn-success"><i class="fa fa-regular fa-plus me-2"></i>Tambah user</a>
+
+            <!-- logout -->
+            <form action="pages/logout.php" method="POST">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+
 
         <table class="table table-striped">
             <thead>

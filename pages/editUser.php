@@ -10,6 +10,20 @@
 </head>
 
 <body>
+
+    <?php
+    // cek session, apakah sudah login
+    session_start();
+
+    // Cek apakah session sudah ada
+    if (!isset($_SESSION['email'])) {
+        // jika Session belum ada
+        header("Location: login.php");
+        exit;
+    }
+
+    ?>
+
     <div class="container mt-4 px-5">
 
         <h3>Edit Pengguna</h3>
