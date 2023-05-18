@@ -27,6 +27,12 @@
 
     <!-- MENAMPILKAN TABEL DATA PENGGUNA -->
     <div class="container mt-4">
+
+        <!-- Ke halaman tugas PBO -->
+        <a href="pages/pbo.php">Ke halaman tugas PHP 6: PBO --></a>
+
+        <br><br>
+
         <h3>Data pengguna</h3>
 
         <div class="d-flex justify-content-between mb-3">
